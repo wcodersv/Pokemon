@@ -1,5 +1,6 @@
 import React from 'react';
 import { styled } from '@mui/system';
+import CardMedia from '@mui/material/CardMedia';
 
 const StyledImageContainer = styled('div')({
     display: 'flex',
@@ -9,7 +10,7 @@ const StyledImageContainer = styled('div')({
     gap: 12,
 });
 
-const StyledImage = styled('img')({
+const StyledImage = styled(CardMedia)({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
@@ -20,10 +21,12 @@ const StyledImage = styled('img')({
     background: 'red',
 });
 
-const CustomImage = ({ src, alt }) => (
-    <StyledImageContainer>
-        <StyledImage src={src} alt={alt} />
-    </StyledImageContainer>
-);
+const ImageCard = ({ srcImg, altImg }) => {
+    return (
+        <StyledImageContainer>
+            <StyledImage component="img" image={srcImg} alt={altImg} height={200} />
+        </StyledImageContainer>
+    )
+};
 
-export default CustomImage;
+export default ImageCard;

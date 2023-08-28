@@ -1,7 +1,8 @@
+import React from 'react';
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 
-export const ButtonChipName = styled(Button)(({ theme }) => ({
+const CustomButtonChipName = styled(Button)(({ theme }) => ({
     color: theme.palette.getContrastText(theme.palette.primary.main),
     display: 'flex',
     justifyContent: 'center',
@@ -21,3 +22,8 @@ export const ButtonChipName = styled(Button)(({ theme }) => ({
         background: '#1986EC',
     },
 }));
+
+
+export const ButtonChipName = ({ text }) => {
+    return <CustomButtonChipName>{text}</CustomButtonChipName>
+}

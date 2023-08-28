@@ -1,7 +1,8 @@
+import React from 'react';
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 
-export const CustomButtonPokemonAPI = styled(Button)(({ theme }) => ({
+const CustomButtonPokemonAPI = styled(Button)(({ theme }) => ({
     color: theme.palette.getContrastText(theme.palette.primary.main),
     fontSize: 12,
     fontStyle: 'normal',
@@ -16,3 +17,7 @@ export const CustomButtonPokemonAPI = styled(Button)(({ theme }) => ({
         border: '1px solid  #FFF',
     },
 }));
+
+export const ButtonPokemonAPI = ({ children }) => {
+    return <CustomButtonPokemonAPI>{children}</CustomButtonPokemonAPI>
+}
