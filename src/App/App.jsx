@@ -31,7 +31,7 @@ function App() {
             name: firstPokemonResponse.data.name,
             id: firstPokemonResponse.data.id,
             height: firstPokemonResponse.data.height,
-            attack: firstPokemonResponse.data.attack,
+            attack: firstPokemonResponse.data.stats[1].base_stat,
             imageURL: firstPokemonResponse.data.sprites.front_shiny,
           };
 
@@ -58,7 +58,7 @@ function App() {
         name: response.data.name,
         id: response.data.id,
         height: response.data.height,
-        attack: response.data.attack,
+        attack: response.data.stats[1].base_stat,
         imageURL: response.data.sprites.front_shiny,
       };
       setPokemonInformation([newPokemonInfo]);
@@ -107,7 +107,7 @@ function App() {
                   numberEpisodes={card.episodes || 0}
                   numberId={card.id}
                   numberHeight={card.height}
-                  numberAttack={'49'}
+                  numberAttack={card.attack}
                 />
               ))
             }
