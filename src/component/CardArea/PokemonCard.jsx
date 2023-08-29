@@ -1,9 +1,9 @@
 import React from 'react';
 import Card from '@mui/material/Card';
 import { styled } from '@mui/system';
-import { HeaderCard } from './Card/HeaderCard';
-import ImageCard from './Card/ImageCard';
-import PokemonInfo from './Card/PokemonInfo';
+import { HeaderCard } from './HeaderCard';
+import ImageCard from './ImageCard';
+import PokemonInfo from './PokemonInfo';
 
 const CustomCard = styled(Card)({
     display: 'flex',

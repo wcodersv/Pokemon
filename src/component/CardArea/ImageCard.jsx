@@ -4,27 +4,31 @@ import CardMedia from '@mui/material/CardMedia';
 
 const StyledImageContainer = styled('div')({
     display: 'flex',
-    flexDirection: 'column',
     alignSelf: 'stretch',
     alignItems: 'center',
-    gap: 12,
+    height: 200,
+    width: '100%',
+    padding: '22px  100px',
 });
 
 const StyledImage = styled(CardMedia)({
     display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-between',
-    height: 200,
-    padding: '22px  150px',
-    // alignSelf: 'stretch',
+    justifyContent: 'center',
+    alignSelf: 'stretch',
     alignItems: 'center',
-    background: 'red',
+    objectFit: 'contain',
+    height: '100%',
+    width: '100%',
 });
 
 const ImageCard = ({ srcImg, altImg }) => {
     return (
         <StyledImageContainer>
-            <StyledImage component="img" image={srcImg} alt={altImg} height={200} />
+            <StyledImage
+                component="img"
+                image={srcImg}
+                alt={altImg}
+            />
         </StyledImageContainer>
     )
 };

@@ -24,6 +24,6 @@ const CustomButtonChipName = styled(Button)(({ theme }) => ({
 }));
 
 
-export const ButtonChipName = ({ text }) => {
-    return <CustomButtonChipName>{text}</CustomButtonChipName>
+export const ButtonChipName = ({ text, url, handleInfoToggle }) => {
+    return <CustomButtonChipName onClick={() => handleInfoToggle(url)}>{text}</CustomButtonChipName>
 }

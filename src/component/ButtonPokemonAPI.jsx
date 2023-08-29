@@ -19,5 +19,5 @@ const CustomButtonPokemonAPI = styled(Button)(({ theme }) => ({
 }));
 
 export const ButtonPokemonAPI = ({ children }) => {
-    return <CustomButtonPokemonAPI>{children}</CustomButtonPokemonAPI>
+    return <CustomButtonPokemonAPI href="https://pokeapi.co/" target="_blank">{children}</CustomButtonPokemonAPI>
 }

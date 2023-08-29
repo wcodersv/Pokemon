@@ -1,6 +1,7 @@
 import React from 'react';
 import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
+import { Box } from '@mui/system';
 
 const CustomCardHeader = styled(Typography)(({ theme }) => ({
   color: '#A0A0A0',
@@ -13,5 +14,11 @@ const CustomCardHeader = styled(Typography)(({ theme }) => ({
 }));
 
 export const HeaderCard = ({ headerText }) => {
-  return <CustomCardHeader variant="h1">{headerText}</CustomCardHeader>
+  return (
+    <Box>
+      <CustomCardHeader variant="h1">
+        {headerText}
+      </CustomCardHeader>
+    </Box>
+  );
 }
