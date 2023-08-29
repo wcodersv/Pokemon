@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Покемоны - Тестовое задание 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Описание задания
 
-## Available Scripts
+1. Сделать компонент согласно [макету](https://www.figma.com/file/S0l7PXBwTXNWvZ3dHRq5DN/Тестовое-задания-на-вакансию-Frontend-developer?mode=dev).
 
-In the project directory, you can run:
+2. Необходимо взять 10 покемонов из https://pokeapi.co/. Они должны отображаться в Chip. 
+При нажатии появляется карточка с описанием. 
 
-### `npm start`
+3. Использовать библиотеки `React`, `Axios`, `Material MUI`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4. Готовую работу загрузить на GitHub. А так же запустить проект на gitlabPages или любом другом бесплатном статик хостинге.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 👩‍💻 Общее описание
+Данный проект представляет собой веб-приложение на базе библиотеки `React`, которое использует публичное API Pokémon для отображения списка покемонов и их характеристик. Пользователи могут просматривать информацию о различных покемонах.
 
-### `npm run build`
+### 📌 Основные задачи
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Загрузка списка покемонов: При загрузке страницы происходит запрос к API Pokémon для получения списка покемонов с ограничением в 10 покемонов.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Отображение списка покемонов: Полученные имена покемонов выводятся в виде кнопок. При клике на кнопку покемона выполняется запрос для получения дополнительной информации о нем.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Отображение информации о покемоне: При клике на кнопку с именем покемона запрашивается дополнительная информация о покемоне. Эта информация выводится в виде карточки.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 🚀 Техническая реализация
+1. Для взаимодействия с API Pokémon используется библиотека `Axios`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Для стилизации используется библиотека `Material-UI`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p><a href="https://www.figma.com/file/S0l7PXBwTXNWvZ3dHRq5DN/Тестовое-задания-на-вакансию-Frontend-developer?node-id=2%3A231&mode=dev" target="_blank">Макет в Figma</a></p>
