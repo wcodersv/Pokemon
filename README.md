@@ -1,5 +1,8 @@
 # Покемоны - Тестовое задание 
 
+### <a href="https://wcodersv.github.io/Pokemon/" target="_blank">Посмотреть сайт</a>
+
+
 ## Описание задания
 
 1. Сделать компонент согласно [макету](https://www.figma.com/file/S0l7PXBwTXNWvZ3dHRq5DN/Тестовое-задания-на-вакансию-Frontend-developer?mode=dev).
