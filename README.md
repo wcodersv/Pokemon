@@ -1,6 +1,6 @@
 # Покемоны - Тестовое задание 
 
-### <a href="https://wcodersv.github.io/Pokemon/" target="_blank">Посмотреть сайт</a>
+### <a href="https://wcodersv.github.io/Pokemon/">Посмотреть сайт</a>
 
 
 ## Описание задания
