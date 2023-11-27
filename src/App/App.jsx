@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Box } from '@mui/system';
-import { MainContainer } from '../component/MainContainer';
-import { ButtonPokemonAPI } from '../component/ButtonPokemonAPI';
-import { CardContainer } from '../component/CardContainer';
-import { ChipsContainer } from '../component/ChipsArea/ChipsContainer';
-import { TerminDefinitionContainer } from '../component/CardArea/TerminDefinitionContainer';
-import { ButtonChipName } from '../component/ChipsArea/ButtonChipName';
-import PokemonCard from '../component/CardArea/PokemonCard';
+import { MainContainer } from '../components/MainContainer';
+import { ButtonPokemonAPI } from '../components/ButtonPokemonAPI';
+import { CardContainer } from '../components/CardContainer';
+import { ChipsContainer } from '../components/ChipsArea/ChipsContainer';
+import { TerminDefinitionContainer } from '../components/CardArea/TerminDefinitionContainer';
+import { ButtonChipName } from '../components/ChipsArea/ButtonChipName';
+import PokemonCard from '../components/CardArea/PokemonCard';
 
 
 function App() {
